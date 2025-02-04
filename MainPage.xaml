@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0">
+
+            <Label Text="Tip Calculator" HorizontalOptions="Center" FontSize="Title"/>
+            <Label Text="Bill Amount" FontSize="Large"/>
+            <Entry x:Name="txtBillAmount" Keyboard="Numeric" Placeholder="Enter bill amount"/>
+            
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="15%" Clicked="OnTipButtonClicked"/>
+                <Button Text="20%" Clicked="OnTipButtonClicked"/>
+                <Button Text="25%" Clicked="OnTipButtonClicked"/>
+            </HorizontalStackLayout>
+            
+            <Label x:Name="lblResult" FontSize="Large" HorizontalOptions="Center" Text="Tip: $0.00 | Total: $0.00"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
