@@ -18,7 +18,8 @@
                 <Button Text="25%" Clicked="OnTipButtonClicked"/>
             </HorizontalStackLayout>
             
-            <Label x:Name="lblResult" FontSize="Large" HorizontalOptions="Center" Text="Tip: $0.00 | Total: $0.00"/>
+            <Button Text="Clear" Clicked="OnClearButtonClicked" HorizontalOptions="Center" BackgroundColor="LightGray"/>
+            <Label x:Name="lblResult" FontSize="Medium" HorizontalOptions="Center" Text="Tip: $0.00 | Total: $0.00"/>
 
         </VerticalStackLayout>
     </ScrollView>

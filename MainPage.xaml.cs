@@ -22,4 +22,9 @@ public partial class MainPage : ContentPage
             lblResult.Text = "Enter a valid bill amount.";
         }
     }
+    private void OnClearButtonClicked(object sender, System.EventArgs e)
+    {
+        txtBillAmount.Text = string.Empty;
+        lblResult.Text = "Tip: $0.00 | Total: $0.00";
+    }
 }
